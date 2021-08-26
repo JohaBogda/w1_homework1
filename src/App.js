@@ -4,7 +4,7 @@ import "./App.css"
 export default class App extends Component {
   render() {
     return (
-      <div id = "container">
+      <div class = "container">
         <div class= "sidebar">
           <ul>
             <li>Dashboard</li>
@@ -16,10 +16,28 @@ export default class App extends Component {
           </ul>
         </div>
 
-        <div class = "reviews">Reviews</div>
-        <div class = "average">Average Rating</div>
-        <div class = "analysis">Sentiment Analysis</div>
-        <div class = "visitors">Website Visiors</div>
+        <div class = "reviews">
+          <h2>Reviews</h2>
+          <h1>1,281</h1>
+        </div>
+
+        <div class = "average">
+          <h2>Average Rating</h2>
+          <h1>4.6</h1>
+        </div>
+
+        <div class = "analysis">
+          <h2>Sentiment Analysis</h2>
+          <h1>960</h1>
+          <h1>122</h1>
+          <h1>321</h1>
+        </div>
+
+        <div class = "visitors">
+          <h2>Website Visitors</h2>
+          <h1>821</h1>
+        </div>
+
         <div class = "empty"></div>
         
       </div>

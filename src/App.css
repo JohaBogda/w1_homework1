@@ -1,13 +1,49 @@
-#container{
-  background-color: lightgray;
-  width: 100%;
-  height: 100%;
+.container{
+  width: 100vw;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: ;
+  grid-template-areas: "sidebar reviews average analysis"
+                        "sidebar visitors visitors visitors";
+  gap: 15px;
+  background-color: rgb(245, 241, 241);
 }
+
 
 ul{
   list-style-type:none;
+}
+
+.sidebar{
+  background-color: lightgrey;
+  grid-area: sidebar;
+}
+
+.reviews{
+  background-color: lightgrey;
+  grid-area: reviews;
+  text-align: center;
+}
+
+.average{
+  background-color: lightgrey;
+  grid-area: average;
+  text-align: center;
+}
+
+.analysis{
+  background-color: lightgrey;
+  grid-area: analysis;
+  text-align: center;
+}
+
+.visitors{
+  background-color: lightgrey;
+  grid-area: visitors;
+}
+
+.empty{
+  border: 1px solid black;
+  grid-area: empty;
 }
